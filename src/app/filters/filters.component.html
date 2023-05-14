@@ -1,0 +1,40 @@
+
+    <br>
+    <button class="w3-btn" id="filter" onclick="showFilters()"><h4>Filters +</h4></button>
+    <form class="w3-form filterForm" >
+        <hr>
+        <div class="w3-container filter" style="display: none">
+        <h6>Price</h6>
+        <input class="" type="checkbox" ><label>1-1000</label><br>
+        <input class="" type="checkbox" ><label>1000-10000</label><br>
+        <input class="" type="checkbox" ><label>10000-100000</label><br>
+        <input class="" type="checkbox" ><label>>100000</label><br>
+        <hr>
+        <h6>State of Urgency</h6>
+        <input type="radio" name="urgency"><label>Relaxed</label><br>
+        <input type="radio" name="urgency"><label>Immideate</label><br>
+        <input type="radio" name="urgency"><label>Urgent</label><br>
+        <hr>
+        <h6>Area</h6>
+        <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Start searching for a hero by id or name or country">
+        <div id="area" style="overflow-y: scroll; height:100px; overflow-x:hidden;">
+            <ul style="list-style-type: none;">
+            <li class="w3-left" *ngFor="let area of areas | filter: searchText" >
+            <input class="w3-check-small" type="checkbox" ><label>{{ area.name }}</label><br>
+            </li>
+        </ul>
+        </div>
+        <hr>
+        <h6>Gender Preferences</h6>
+        <input type="radio" name="gender"><label>Male</label><br>
+        <input type="radio" name="gender"><label>Female</label><br>
+        <hr>
+        <h6>Rating</h6>
+        <input class="" type="checkbox" ><label>5 or more</label><br>
+        <input class="" type="checkbox" ><label>4 or more</label><br>
+        <input class="" type="checkbox" ><label>3 or more</label><br>
+        <input class="" type="checkbox" ><label>2 or more</label><br>
+        <input class="" type="checkbox" ><label>1 or more</label><br>
+    </div>
+    </form>
+

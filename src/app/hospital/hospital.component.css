@@ -1,0 +1,9 @@
+.filters{
+    width:20% !important;
+}
+
+.cards{
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: left;
+}

@@ -1,0 +1,23 @@
+.panel1{
+    background-image:url("src/assets/doctor_female.jpeg") !important;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact{
+    height: 800px;
+    background-image: url("https://images.pexels.com/photos/8636601/pexels-photo-8636601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: fill;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.menu{
+    position:   absolute;
+    max-height: 100px;
+    align-items: center;
+    top: 80%;
+    left: 29%;
+}
+

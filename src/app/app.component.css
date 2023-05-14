@@ -1,0 +1,5 @@
+.background{
+    background-image:url("src/assets/doctor_female.jpeg") !important;
+    background-size: cover;
+    height: 2000px;
+}

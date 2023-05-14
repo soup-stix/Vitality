@@ -1,0 +1,140 @@
+
+<div class="w3-container panel1">
+    <div class="w3-card-1 w3-text-black w3-right w3-half w3-padding-large w3-margin" style="margin-top: 10% !important;">
+        <h1>Vitality</h1><br>
+        <h4>To learn more about our clinical programs,<br> 
+            browse our list of medical services alphabetically<br> 
+            or search by keyword in the box below.
+        </h4><br><br>
+        <button routerLink="/hospital" class="w3-btn w3-white w3-border w3-border-blue w3-round-large">&nbsp;Try it out&nbsp;</button>
+    </div>
+    <br>
+    <div class="btn-group btn-group-lg w3-margin w3-round-xxlarge w3-xxlarge w3-blue position-absolute start-50 translate-middle-x" style="height: 15% !important; width: 90%; top: 75%;" role="group">
+        <button type="button" routerLink="/doctor" class="btn rounded-pill w3-blue w3-hover-text-black" style="width: 40%;">Hospital</button>
+        <button type="button" routerLink="/nursing" class="btn rounded-pill w3-blue w3-hover-text-black" style="width: 40%;">Nursing</button>
+        <button type="button" routerLink="/ambulence" class="btn rounded-pill w3-blue w3-hover-text-black" style="width: 40%;">Ambulence</button>
+    </div>
+</div>
+<div class="w3-container">
+    <hr><h1 class="w3-center w3-margin">Our Services</h1><hr>
+    <div class="w3-card-2 w3-text-black w3-padding-large w3-half">
+        <img src="https://img.freepik.com/premium-photo/closeup-african-american-therapist-doctor-holding-tablet-analyzing-medical-expertise-monitoring-sickness-symptoms-during-clinical-appointment-practitioner-working-hospital-office_482257-28702.jpg" alt="Image" class="w3-left" style="width:25%; height: 80%;">
+        <div class="w3-contaner w3-half w3-margin">    
+            <h2>Doctors</h2><br>
+            <h5>To learn more about our clinical programs,<br> 
+                browse our list of medical services alphabetically<br> 
+                or search by keyword in the box below.
+            </h5><br><br>
+            <a href="" routerLink="/doctor" class="w3-text-black">&nbsp;<h6>Learn more</h6>&nbsp;</a>
+        </div>
+    </div>
+    <div class="w3-card-2 w3-text-black w3-padding-large w3-half">
+        <img src="https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image" class="w3-left" style="width:30%; height: 80%">
+        <div class="w3-contaner w3-half w3-margin">    
+            <h2>Nursing</h2><br>
+            <h5>To learn more about our clinical programs,<br> 
+                browse our list of medical services alphabetically<br> 
+                or search by keyword in the box below.
+            </h5><br><br>
+            <a href="" routerLink="/nursing" class="w3-text-black">&nbsp;<h6>Learn more</h6>&nbsp;</a>
+        </div>
+    </div>
+    <div class="w3-card-2 w3-text-black w3-padding-large w3-half">
+        <img src="https://images.pexels.com/photos/8942227/pexels-photo-8942227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image" class="w3-left" style="width:25%;">
+        <div class="w3-contaner w3-half w3-margin">    
+            <h2>Ambulence</h2><br>
+            <h5>To learn more about our clinical programs,<br> 
+                browse our list of medical services alphabetically<br> 
+                or search by keyword in the box below.
+            </h5><br><br>
+            <a href="" routerLink="/ambulence" class="w3-text-black">&nbsp;<h6>Learn more</h6>&nbsp;</a>
+        </div>
+    </div>
+    <div class="w3-card-2 w3-text-black w3-padding-large w3-half">
+        <img src="assets/tablet.jpeg" alt="Image" class="w3-left" style="width:25%;">
+        <div class="w3-contaner w3-half w3-margin">    
+            <h2>Hospital</h2><br>
+            <h5>To learn more about our clinical programs,<br> 
+                browse our list of medical services alphabetically<br> 
+                or search by keyword in the box below.
+            </h5><br><br>
+            <a href="" routerLink="/hospital" class="w3-text-black">&nbsp;<h6>Learn more</h6>&nbsp;</a>
+        </div>
+    </div>
+</div>
+<div class="w3-container w3-center" style="margin-top: 30%">
+</div>
+<div class="w3-container w3-blue w3-center" style="height: 1000px;">
+    <!-- <img src="assets/doctors.png" width="90%" style="position: relative; bottom: 20% ;" alt="Doctors"> -->
+    <video style="position: relative; bottom: 20% ;  width: 80%; height: 60%" id="my_video_1" class="video-js vjs-default-skin" controls preload="none"
+		poster='assets/doctors.png'
+		data-setup='{ "aspectRatio":"800:800", "playbackRates": [1, 1.5, 2] }'>
+		<source src="assets\videoplayback.mp4" type='video/mp4'/>
+		<!-- <source src="http://techslides.com/demos/sample-videos/small.webm" type='video/webm' /> -->
+	</video>
+    <br>
+    <button class="w3-margin-right w3-btn w3-black w3-round-xxlarge w3-small"style="position: relative; bottom: 20% ;" (click)="playPause()"><i class="fa fa-play"></i> / <i class="fa fa-pause" aria-hidden="true"></i></button>
+	<button class="w3-margin-right w3-btn w3-black w3-round-xxlarge w3-small" style="position: relative; bottom: 20% ;" (click)="makeBig()"><></button>
+    <button class="w3-margin-right w3-btn w3-black w3-round-xxlarge w3-small" style="position: relative; bottom: 20% ;" (click)="makeNormal()">[ ]</button>
+	<button class="w3-margin-right w3-btn w3-black w3-round-xxlarge w3-small" style="position: relative; bottom: 20% ;" (click)="makeSmall()">><</button>
+	<button class="w3-margin-right w3-btn w3-black w3-round-xxlarge w3-small" style="position: relative; bottom: 20% ;" (click)="restart();"><i class="fa fa-refresh"></i></button>
+	<button class="w3-margin-right w3-btn w3-black w3-round-xxlarge w3-small" style="position: relative; bottom: 20% ;" (click)="skip(-20)"><i class="fa fa-backward"></i></button>
+	<button class="w3-margin-right w3-btn w3-black w3-round-xxlarge w3-small" style="position: relative; bottom: 20% ;" (click)="skip(20)"><i class="fa fa-forward"></i></button>
+    <div class="w3-container w3-margin w3-center" style="position: relative; top: -10%;">
+        <h1 class="w3-margin">How We Work</h1>
+        <div class="w3-container w3-center" style="width: 100%;">
+            <h6 class="w3-half w3-padding-64 w3-center">Its departments are equipped with state-of-the-art diagnostic and therapeutic equipment and operated by top-category physicians, Ph.D. and Doctors of Medicine, associate professors and professors knowledgeable of the best available practices of European schools. Partnerships with specialized clinics and research centers in Russia and Europe make possible consultations by doctors of unique specialties.</h6>
+            <h6 class="w3-half w3-padding-64 w3-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+        </div>
+    </div>
+</div>
+<div class="w3-container w3-light-blue w3-center" style="height: 500px !important;">
+
+    <div class="w3-container w3-third w3-white" style="width: 25%; align-self: center; position: relative; bottom: 20%; left: 12%;">
+        <h2 class="w3-text-blue">A</h2>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br><br><button class="w3-btn">Learn more</button>
+    </div>
+    <div class="w3-container w3-third w3-white" style="width: 25%; align-self: center; position: relative; bottom: 20%; left: 12%;">
+        <h2 class="w3-text-blue">B</h2>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br><br><button class="w3-btn">Learn more</button>
+    </div>
+    <div class="w3-container w3-third w3-white" style="width: 25%; align-self: center; position: relative; bottom: 20%; left: 12%;">
+        <h2 class="w3-text-blue">C</h2>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br><br><button class="w3-btn">Learn more</button>
+    </div>
+</div>
+<div id="contact" class="w3-container w3-white contact">
+<div class="w3-card-4 w3-white w3-round-xlarge" style="position: relative; bottom: 10% !important;">
+        <form [formGroup]="contactusForm" (ngSubmit)="formSubmit()" class="w3-container w3-white w3-round-xxlarge w3-center">
+            <h2 class="w3-margin">Contact Us</h2>
+            <p class="w3-margin">      
+                <input class="w3-input w3-border w3-round" type="text" formControlName="name" id="name" required>
+                <label for="name" class="w3-label w3-validate">Name</label></p>
+            <p class="w3-margin">      
+                <input class="w3-input w3-border w3-round" #contact type="number" id="ph_no" formControlName="number" required>
+                <label class="w3-label w3-validate">Contact no.</label></p>
+            <p class="w3-margin">      
+                <input class="w3-input w3-border w3-round" type="email" formControlName="email" required>
+                <label class="w3-label w3-validate">Email</label></p>
+            <p class="w3-margin">      
+                <textarea class="w3-input w3-border w3-round" rows="4" formControlName="message" required></textarea>
+                <label class="w3-label w3-validate">Enquiry</label></p>
+            <p class="w3-center">      
+            <button type="submit" [disabled]="!contactusForm.valid" class="w3-margin w3-btn w3-blue w3-round-large">Submit</button>
+            <!-- <p>
+                {{ contactusForm.value.name }}
+            </p> -->
+        </form>
+    </div>
+</div>
+<div id="review" *ngIf="review" class="w3-container w3-margin w3-round">
+    <h4>Leave a review: <button class="w3-right w3-btn w3-blue w3-round-large w3-small" (click)="submitReview()">Submit</button></h4>
+    <ejs-richtexteditor #reviewContent id='iframeRTE' [toolbarSettings]='tools' [iframeSettings]='iframe' [height]='height'>
+        <ng-template #valueTemplate>
+            <p [innerHTML]="reviewStr"></p>
+        </ng-template>
+    </ejs-richtexteditor>
+</div>

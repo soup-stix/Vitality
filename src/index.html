@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Vitality</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <app-root></app-root>
+  <script>
+    
+    /*$(document).ready(function() {             
+    $('#loginModal').modal('show');
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    });
+    $(document).ready(function() {             
+    $('#signupModal').modal('show');
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    });*/
+    
+
+    function showFilters(){
+      $(".filter").toggle();
+      console.log("test");
+    }
+    
+    
+    function login(e){
+      e.preventDefault();
+    console.log(e);
+    console.log("Submited")
+    
+  }
+
+  function signup(e){
+    console.log(e.data);
+    return verifyPassword()
+    e.preventDefault();
+  }
+
+  function verifyPassword() {  
+  var pw = document.getElementById("password1").value;  
+  //check empty password field  
+  if(pw == "") {  
+     document.getElementById("message").innerHTML = "**Fill the password please!";  
+     return false;  
+  }  
+   
+ //minimum password length validation  
+  if(pw.length < 8) {  
+     document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
+     return false;  
+  }  
+  
+//maximum length of password validation  
+  if(pw.length > 15) {  
+     document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";  
+     return false;  
+  } else {  
+     alert("Password is correct");  
+  }  
+}  
+
+// form = document.getElementById("login");
+// form.addEventListener("submit",function(e){
+//   console.log("test");
+//     e.preventDefault();
+// })
+
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("areaSearch");
+    filter = input.value.toUpperCase();
+    form = document.getElementById("filterForm");
+    ul = form.getElementById("ul");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+  
+  </script>
+  <!-- jQuery -->
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+  <!-- Popper JS -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+  <!-- Bootstrap JS -->
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
