@@ -44,6 +44,11 @@ export class NavbarComponent {
       this.showLogin = true;
       this.showSignup = true;
     }
+    // this.user = 'Guest';
+    //   this.home.setUser("Guest");
+    //   this.showLogout = false;
+    //   this.showLogin = true;
+    //   this.showSignup = true;
 
   }
 
