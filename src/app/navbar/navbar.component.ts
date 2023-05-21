@@ -24,6 +24,7 @@ export class NavbarComponent {
     password: new FormControl(Validators.required)} ) 
 
   constructor(private home: HomeComponent, private cookieService: CookieService,private http: HttpClient) {
+    if (this.cookieService.get('userData')){
     var cookie = this.cookieService.get('userData');
     var temp;
     console.log(cookie)
@@ -37,18 +38,27 @@ export class NavbarComponent {
       this.showLogin = false;
       this.showSignup = false;
     }
-    else{
+    else if(temp.user == ""){
       this.user = 'Guest';
       this.home.setUser("Guest");
       this.showLogout = false;
       this.showLogin = true;
       this.showSignup = true;
     }
-    // this.user = 'Guest';
-    //   this.home.setUser("Guest");
-    //   this.showLogout = false;
-    //   this.showLogin = true;
-    //   this.showSignup = true;
+    else{
+      this.user = 'Guest';
+      this.home.setUser("Guest");
+      this.showLogout = false;
+      this.showLogin = true;
+      this.showSignup = true;
+    }}
+    else{
+    this.user = 'Guest';
+      this.home.setUser("Guest");
+      this.showLogout = false;
+      this.showLogin = true;
+      this.showSignup = true;
+    }
 
   }
 
